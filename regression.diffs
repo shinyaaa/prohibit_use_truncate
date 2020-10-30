@@ -1,0 +1,24 @@
+diff -U3 /home/penguin/pgsql/12.4/postgresql-12.4/contrib/prohibit_use_truncate/expected/prohibit_use_truncate.out /home/penguin/pgsql/12.4/postgresql-12.4/contrib/prohibit_use_truncate/results/prohibit_use_truncate.out
+--- /home/penguin/pgsql/12.4/postgresql-12.4/contrib/prohibit_use_truncate/expected/prohibit_use_truncate.out	2020-10-30 16:32:45.160391945 +0900
++++ /home/penguin/pgsql/12.4/postgresql-12.4/contrib/prohibit_use_truncate/results/prohibit_use_truncate.out	2020-10-30 16:47:59.063379307 +0900
+@@ -1,13 +1,15 @@
+ CREATE EXTENSION prohibit_use_truncate;
++ERROR:  syntax error at or near "AS"
++LINE 1: CREATE EXTENSION prohibit_use_truncate;
++                                            ^
+ CREATE TABLE test_table (id integer, number integer);
+ INSERT INTO test_table VALUES (1, 10);
+ TRUNCATE test_table;
+-ERROR:  Don't use TRUNCATE.
+ SELECT * FROM test_table;
+  id | number 
+ ----+--------
+-  1 |     10
+-(1 rows)
++(0 rows)
+ 
+ DROP TABLE test_table;
+-DROP EXTENSION prohibit_use_truncate;
+\ No newline at end of file
++DROP EXTENSION prohibit_use_truncate;
++ERROR:  extension "prohibit_use_truncate" does not exist
