@@ -1,6 +1,6 @@
 diff -U3 /home/penguin/pgsql/12.4/postgresql-12.4/contrib/prohibit_use_truncate/expected/prohibit_use_truncate.out /home/penguin/pgsql/12.4/postgresql-12.4/contrib/prohibit_use_truncate/results/prohibit_use_truncate.out
 --- /home/penguin/pgsql/12.4/postgresql-12.4/contrib/prohibit_use_truncate/expected/prohibit_use_truncate.out	2020-10-30 16:32:45.160391945 +0900
-+++ /home/penguin/pgsql/12.4/postgresql-12.4/contrib/prohibit_use_truncate/results/prohibit_use_truncate.out	2020-10-30 16:47:59.063379307 +0900
++++ /home/penguin/pgsql/12.4/postgresql-12.4/contrib/prohibit_use_truncate/results/prohibit_use_truncate.out	2020-10-30 17:01:29.468368101 +0900
 @@ -1,13 +1,15 @@
  CREATE EXTENSION prohibit_use_truncate;
 +ERROR:  syntax error at or near "AS"
