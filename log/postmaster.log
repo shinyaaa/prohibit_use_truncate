@@ -1,19 +1,15 @@
-2020-10-30 17:01:28.427 JST [45434] LOG:  starting PostgreSQL 12.4 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 8.3.1 20191121 (Red Hat 8.3.1-5), 64-bit
-2020-10-30 17:01:28.427 JST [45434] LOG:  listening on Unix socket "/tmp/pg_regress-C3hGok/.s.PGSQL.54468"
-2020-10-30 17:01:28.434 JST [45437] LOG:  database system was shut down at 2020-10-30 17:01:28 JST
-2020-10-30 17:01:28.435 JST [45434] LOG:  database system is ready to accept connections
-2020-10-30 17:01:29.439 JST [45438] LOG:  checkpoint starting: immediate force wait flush-all
-2020-10-30 17:01:29.440 JST [45438] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.000 s, sync=0.000 s, total=0.000 s; sync files=0, longest=0.000 s, average=0.000 s; distance=1 kB, estimate=1 kB
-2020-10-30 17:01:29.452 JST [45438] LOG:  checkpoint starting: immediate force wait
-2020-10-30 17:01:29.453 JST [45438] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.000 s, sync=0.000 s, total=0.000 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=1 kB
-2020-10-30 17:01:29.465 JST [45452] pg_regress/prohibit_use_truncate ERROR:  syntax error at or near "AS" at character 37
-2020-10-30 17:01:29.465 JST [45452] pg_regress/prohibit_use_truncate STATEMENT:  CREATE EXTENSION prohibit_use_truncate;
-2020-10-30 17:01:29.468 JST [45452] pg_regress/prohibit_use_truncate ERROR:  extension "prohibit_use_truncate" does not exist
-2020-10-30 17:01:29.468 JST [45452] pg_regress/prohibit_use_truncate STATEMENT:  DROP EXTENSION prohibit_use_truncate;
-2020-10-30 17:01:29.473 JST [45434] LOG:  received fast shutdown request
-2020-10-30 17:01:29.473 JST [45434] LOG:  aborting any active transactions
-2020-10-30 17:01:29.474 JST [45434] LOG:  background worker "logical replication launcher" (PID 45443) exited with exit code 1
-2020-10-30 17:01:29.474 JST [45438] LOG:  shutting down
-2020-10-30 17:01:29.474 JST [45438] LOG:  checkpoint starting: shutdown immediate
-2020-10-30 17:01:29.475 JST [45438] LOG:  checkpoint complete: wrote 35 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.000 s, sync=0.000 s, total=0.000 s; sync files=0, longest=0.000 s, average=0.000 s; distance=95 kB, estimate=95 kB
-2020-10-30 17:01:29.476 JST [45434] LOG:  database system is shut down
+2020-10-30 17:34:15.153 JST [47165] LOG:  starting PostgreSQL 12.4 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 8.3.1 20191121 (Red Hat 8.3.1-5), 64-bit
+2020-10-30 17:34:15.154 JST [47165] LOG:  listening on Unix socket "/tmp/pg_regress-UWUO9N/.s.PGSQL.54468"
+2020-10-30 17:34:15.161 JST [47168] LOG:  database system was shut down at 2020-10-30 17:34:15 JST
+2020-10-30 17:34:15.161 JST [47165] LOG:  database system is ready to accept connections
+2020-10-30 17:34:16.165 JST [47169] LOG:  checkpoint starting: immediate force wait flush-all
+2020-10-30 17:34:16.166 JST [47169] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.000 s, sync=0.000 s, total=0.000 s; sync files=0, longest=0.000 s, average=0.000 s; distance=1 kB, estimate=1 kB
+2020-10-30 17:34:16.178 JST [47169] LOG:  checkpoint starting: immediate force wait
+2020-10-30 17:34:16.178 JST [47169] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.000 s, sync=0.000 s, total=0.000 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=1 kB
+2020-10-30 17:34:16.199 JST [47165] LOG:  received fast shutdown request
+2020-10-30 17:34:16.199 JST [47165] LOG:  aborting any active transactions
+2020-10-30 17:34:16.200 JST [47165] LOG:  background worker "logical replication launcher" (PID 47174) exited with exit code 1
+2020-10-30 17:34:16.200 JST [47169] LOG:  shutting down
+2020-10-30 17:34:16.200 JST [47169] LOG:  checkpoint starting: shutdown immediate
+2020-10-30 17:34:16.201 JST [47169] LOG:  checkpoint complete: wrote 35 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.000 s, sync=0.000 s, total=0.000 s; sync files=0, longest=0.000 s, average=0.000 s; distance=95 kB, estimate=95 kB
+2020-10-30 17:34:16.202 JST [47165] LOG:  database system is shut down

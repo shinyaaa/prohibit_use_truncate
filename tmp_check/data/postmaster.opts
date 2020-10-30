@@ -1,1 +1,1 @@
-/home/penguin/pgsql/12.4/postgresql-12.4/tmp_install/home/penguin/pgsql/12.4/bin/postgres "-D" "/home/penguin/pgsql/12.4/postgresql-12.4/contrib/prohibit_use_truncate/./tmp_check/data" "-F" "-c" "listen_addresses=" "-k" "/tmp/pg_regress-C3hGok"
+/home/penguin/pgsql/12.4/postgresql-12.4/tmp_install/home/penguin/pgsql/12.4/bin/postgres "-D" "/home/penguin/pgsql/12.4/postgresql-12.4/contrib/prohibit_use_truncate/./tmp_check/data" "-F" "-c" "listen_addresses=" "-k" "/tmp/pg_regress-UWUO9N"
