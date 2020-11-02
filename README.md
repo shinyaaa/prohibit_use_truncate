@@ -7,12 +7,12 @@ I haven't done it yet.
 
 ## Install
 Download the source archive of pg_strsearch from [here](https://github.com/shinyaaa/prohibit_use_truncate), and then build and install it.
-    ```
-    $ cd prohibit_use_truncate
-    $ make USE_PGXS=1 PG_CONFIG=/opt/pgsql-X.Y.Z/bin/pg_config
-    $ su
-    # make USE_PGXS=1 PG_CONFIG=/opt/pgsql-X.Y.Z/bin/pg_config install
-    # exit
-    ```
+```
+$ cd prohibit_use_truncate
+$ make USE_PGXS=1 PG_CONFIG=/opt/pgsql-X.Y.Z/bin/pg_config
+$ su
+# make USE_PGXS=1 PG_CONFIG=/opt/pgsql-X.Y.Z/bin/pg_config install
+# exit
+```
 ## How to use
 You need to add `shared_preload_libraries = 'prohibit_use_truncate'` to `postgresql.conf`.
