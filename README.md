@@ -7,7 +7,7 @@ prohibit_use_truncate is released under the [PostgreSQL License](https://opensou
 I haven't done it yet.
 
 ## Install
-Download the source archive of pg_strsearch from [here](https://github.com/shinyaaa/prohibit_use_truncate), and then build and install it.
+Download the source archive of prohibit_use_truncate from [here](https://github.com/shinyaaa/prohibit_use_truncate), and then build and install it.
 ```
 $ cd prohibit_use_truncate
 $ make USE_PGXS=1 PG_CONFIG=/opt/pgsql-X.Y.Z/bin/pg_config
