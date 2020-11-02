@@ -5,6 +5,7 @@
 PG_MODULE_MAGIC;
 
 void _PG_init(void);
+void _PG_fini(void);
 
 /* Saved hook values in case of unload */
 static ProcessUtility_hook_type prev_ProcessUtility = NULL;
@@ -29,4 +30,10 @@ _PG_init(void)
 {
 	prev_ProcessUtility = ProcessUtility_hook;
 	ProcessUtility_hook = prohibit_use_truncate;
+}
+
+void
+_PG_fini(void)
+{
+	ProcessUtility_hook = prev_ProcessUtility;
 }
