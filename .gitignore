@@ -1,0 +1,7 @@
+log/
+result/
+tmp_check/
+*.o
+*.so
+*.out
+*.diffs
