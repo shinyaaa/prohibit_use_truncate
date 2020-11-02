@@ -4,8 +4,6 @@
 
 PG_MODULE_MAGIC;
 
-PG_FUNCTION_INFO_V1(prohibit_use_truncate);
-
 void _PG_init(void);
 
 /* Saved hook values in case of unload */
