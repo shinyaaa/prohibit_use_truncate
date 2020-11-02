@@ -15,18 +15,18 @@ prohibit_use_truncate(PlannedStmt *pstmt, const char *queryString,
 					ParamListInfo params, QueryEnvironment *queryEnv,
 					DestReceiver *dest, char *completionTag)
 {
-    Node *parsetree = pstmt->utilityStmt;
-    if (nodeTag(parsetree) == T_TruncateStmt)
-        elog(ERROR, "Don't use TRUNCATE.");
-    else
-        standard_ProcessUtility(pstmt, queryString,
-										context, params, queryEnv,
-										dest, completionTag);
+	Node *parsetree = pstmt->utilityStmt;
+	if (nodeTag(parsetree) == T_TruncateStmt)
+		elog(ERROR, "Don't use TRUNCATE.");
+	else
+		standard_ProcessUtility(pstmt, queryString,
+								context, params, queryEnv,
+								dest, completionTag);
 }
 
 void
 _PG_init(void)
 {
-    prev_ProcessUtility = ProcessUtility_hook;
+	prev_ProcessUtility = ProcessUtility_hook;
 	ProcessUtility_hook = prohibit_use_truncate;
 }
