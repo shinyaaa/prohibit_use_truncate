@@ -1,5 +1,0 @@
-# prohibit_use_truncate extension
-comment = 'prohibit_use_truncate'
-default_version = '1.0'
-module_pathname = '$libdir/prohibit_use_truncate'
-relocatable = true
