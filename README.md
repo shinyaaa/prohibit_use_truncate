@@ -1,5 +1,6 @@
 # prohibit_use_truncate
 This extension prohibit from useing truncate on PostgreSQL.
+
 prohibit_use_truncate is released under the [PostgreSQL License](https://opensource.org/licenses/postgresql), a liberal Open Source license, similar to the BSD or MIT licenses.
 
 ## Test Status
